@@ -10,3 +10,4 @@ Flask-Mail
 python-dotenv
 WTForms
 email-validator
+werkzeug

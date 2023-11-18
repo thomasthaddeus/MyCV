@@ -1,60 +1,93 @@
-# my-cv
+# Flask CV and User Management Application
 
-this repository was created to fulfill a dns name i didnt want to lose
+## Overview
 
+This Flask application provides a platform to display a Curriculum Vitae (CV) and includes features such as user authentication, profile management, and testing. The application is built using Flask, along with extensions like Flask-WTF for form handling, Flask-SQLAlchemy for database interactions, and Flask-Migrate for database migrations.
+
+## Features
+
+- Display a CV
+- User registration and login
+- User profile management
+- Responsive design using Bootstrap
+- Unit testing for routes, models, and configurations
+
+## Installation
+
+### Prerequisites
+
+- Python 3
+- pip
+- Virtual environment (recommended)
+
+### Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/thomasthaddeus/my-cv.git
+   cd your-repository
+   ```
+
+2. **Create and activate a virtual environment (optional but recommended)**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Environment Variables**
+   - Copy `.env.example` to `.env` and fill in your environment variables.
+   - Set `FLASK_APP=app.py` and `FLASK_ENV=development` in `.flaskenv` for development.
+
+5. **Initialize the database**
+
+   ```bash
+   flask db upgrade
+   ```
+
+6. **Run the application**
+
+   ```bash
+   flask run
+   ```
+
+## Usage
+
+Navigate to `http://localhost:5000` in your web browser to view the application.
+
+## Testing
+
+Run tests with the following command:
+
+```bash
+python -m unittest
 ```
-my-complex-flask-app/
-│
-├── app/
-│   ├── __init__.py       # Initializes the Flask application
-│   ├── routes.py         # Flask routes for your application
-│   ├── models.py         # Database models
-│   ├── forms.py          # WTForms for user input
-│   ├── templates/        # HTML templates for the application
-│   │   ├── layout.html   # Base layout
-│   │   ├── index.html    # Home page template
-│   │   └── ...           # Other HTML templates
-│   └── static/           # Static files (CSS, JavaScript, images)
-│       ├── css/          # CSS files
-│       ├── js/           # JavaScript files
-│       └── images/       # Images
-│
-├── tests/                # Unit and integration tests
-│   ├── __init__.py
-│   └── test_routes.py    # Test cases for routes
-│
-├── venv/                 # Virtual environment directory
-│
-├── .env                  # Environment variables file
-├── .flaskenv             # Flask environment-specific variables
-├── .gitignore            # Gitignore file
-├── config.py             # Configuration settings for the app
-├── requirements.txt      # Python dependencies
-└── README.md             # Project README file
-```
 
-In this structure:
+## Structure
 
-1. **`app/` directory**: Contains the main application package.
-   - **`__init__.py`**: Initializes the Flask app and other components like the database.
-   - **`routes.py`**: Defines the routes/endpoints of your web application.
-   - **`models.py`**: Contains the SQLAlchemy database models.
-   - **`forms.py`**: Defines forms using WTForms.
-   - **`templates/`**: Stores HTML templates.
-   - **`static/`**: Contains static files such as CSS, JavaScript, and images.
+- `app/`: Application package.
+  - `templates/`: Jinja2 templates.
+  - `static/`: Static files like CSS, JavaScript, and images.
+  - `models.py`: Database models.
+  - `forms.py`: WTForms classes.
+  - `routes.py`: Application routes.
+- `tests/`: Unit and integration tests.
+- `requirements.txt`: List of dependencies.
+- `config.py`: Configuration settings.
+- `.env`: Environment variables (not tracked by git).
+- `.flaskenv`: Flask-specific environment variables.
 
-2. **`tests/` directory**: Includes test cases for your application. Good for maintaining code quality and ensuring future changes don't break functionality.
+## Contributing
 
-3. **`venv/`**: A directory for the Python virtual environment, where dependencies are installed.
+Contributions are welcome! Please read `CONTRIBUTING.md` for guidelines on how to submit contributions to this project.
 
-4. **`.env` and `.flaskenv`**: These files store environment variables. `.env` is for sensitive information, and `.flaskenv` is for public environment settings.
+## License
 
-5. **`.gitignore`**: A Git configuration file that tells Git which files or directories to ignore.
-
-6. **`config.py`**: Contains configuration settings for different environments (development, testing, production).
-
-7. **`requirements.txt`**: Lists all the Python dependencies for the project.
-
-8. **`README.md`**: Provides a detailed description of the project, setup instructions, and usage.
-
-This structure helps maintain a clean separation of concerns and makes the application easier to manage as it grows in complexity.
+Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
