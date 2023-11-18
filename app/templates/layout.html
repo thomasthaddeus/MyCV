@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %} - MyFlaskApp</title>
+    <!-- Common CSS/JS Here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+</head>
+
+<body>
+    <nav>
+        <!-- Navigation Bar Here -->
+    </nav>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+pytest
+flask
+sqlalchemy
+
+Flask
+Flask-WTF
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Mail
+python-dotenv
+WTForms
+email-validator
