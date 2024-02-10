@@ -1,7 +1,7 @@
 pytest
 flask
 sqlalchemy
-jinja2
+
 Flask
 Flask-WTF
 Flask-SQLAlchemy
