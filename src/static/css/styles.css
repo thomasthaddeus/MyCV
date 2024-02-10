@@ -1,0 +1,64 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Body and Overall Styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Contact Information */
+.contact-info {
+    text-align: center;
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #d35400;
+    margin-bottom: 10px;
+}
+
+/* Spacing and Layout */
+p {
+    margin-bottom: 15px;
+}
+
+/* Experience, Education, Certifications, Skills, Awards Sections */
+.experience, .education, .certifications, .skills, .awards {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* Link Styling */
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+    .no-print {
+        display: none;
+    }
+}

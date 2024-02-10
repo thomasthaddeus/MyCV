@@ -1,0 +1,50 @@
+{
+    "full_name": "Thaddeus Thomas",
+    "address": "8876 Lipan St, Thornton, CO",
+    "phone": "720-940-3654",
+    "email": "thaddeus.r.thomas@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/in/thomasthaddeus",
+    "github_url": "https://github.com/thomasthaddeus",
+    "objective": "Detail-oriented and solutions-driven Python Developer ...",
+    "skills": [
+        "Programming Languages: Python, Java, C++",
+        "Web Development: Django, Flask, HTML, CSS, JavaScript"
+    ],
+    "jobs": [
+        {
+            "title": "Senior Python Developer",
+            "company": "Tech Corp",
+            "location": "New York, NY",
+            "dates": "Jan 2018 - Present",
+            "details": [
+                "Led a team of 5 developers ...",
+                "Optimized existing codebase by 30% ..."
+            ]
+        },
+        {
+            "title": "Python Developer",
+            "company": "Web Solutions",
+            "location": "Los Angeles, CA",
+            "dates": "Jun 2015 - Dec 2017",
+            "details": [
+                "Developed and maintained ...",
+                "Implemented machine learning models ..."
+            ]
+        }
+    ],
+    "education": "Bachelor's in Computer Science, Springfield University, 2015",
+    "certifications": [
+        "Certified Python Developer – PCEP",
+        "AWS Certified Developer – Associate"
+    ],
+    "projects": [
+        {
+            "title": "Project Alpha",
+            "description": "..."
+        },
+        {
+            "title": "Project Beta",
+            "description": "..."
+        }
+    ]
+}
